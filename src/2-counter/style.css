@@ -1,0 +1,81 @@
+:root {
+    --fg-color: #844;
+    --bg-color: #ffffffaa;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    color: var(--fg-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border-radius: 0 0 1rem 1rem;
+}
+
+header > h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > div {
+    margin: 0 auto;
+    height: fit-content;
+}
+
+#count {
+    font-size: 10rem;
+}
+
+button {
+    font-size: 5rem;
+    padding: 1rem;
+    border: 3px solid var(--fg-color);
+    background: var(--bg-color);
+    cursor: pointer;
+}
+
+a, a:hover {
+    color: var(--fg-color);
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: dotted;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--bg-color);
+
+    display: flex;
+    justify-content: space-between;
+}
